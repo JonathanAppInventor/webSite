@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" email="ing.jonathanf@gmail.com" content="Web Software Development" value="Developer Jonathan Fiquitiva">
+
     <title>Jonathan´s Web Site</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-    <div>
-        <h1>welcome</h1>
-    </div>
-    <div class="container">
+
+    <div class="header_container">
+
+    <!--
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+      <img src="https://via.placeholder.com/150" alt="Imagen 1" class="img-fluid">
+    -->
         <header>
           <h1 id="title">Hello World</h1>
           <select id="language-selector" class="form-select" style="width: 200px;">
@@ -19,18 +25,55 @@
             <option value="es">Español</option>
           </select>
         </header>
-        <p id="content">Welcome to my website!</p>
+        
+    </div>
+
+
+
+      <div class="content_container">
+        <h1>Jonathan Dev</h1>
+
+        <div class="my_picture">
+
+        </div>
+        <p id="content">Electronic engineer with five years of experience in software development, FullSatck web development and SQL database administration; has worked in the design, development and maintenance of electronic systems, oriented to telecommunications, especially the Internet of Things (IOT). Advanced skills in microcontroller programming, integrated circuits and PCB design. Great analytical skills, technical problem solving, teamwork, good personal presentation, advanced English, altruistic, proactive, dynamic, positive.</p>
+
       </div>
-    <script>
-        const translations = {
-          en: { title: "Hello World", content: "Welcome to my website!" },
-          es: { title: "Hola Mundo", content: "¡Bienvenido a mi sitio web!" },
-        };
-        document.getElementById('language-selector').addEventListener('change', (e) => {
-          const lang = e.target.value;
-          document.getElementById('title').innerText = translations[lang].title;
-          document.getElementById('content').innerText = translations[lang].content;
-        });
-      </script>    
-</body>
+
+
+
+      <div class="images_container mt-4">
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-12 col-md-2">
+                <img src="media/CSS3lw.jpg" alt="CSS3" class="img-fluid">
+            </div>
+            <!-- Imagen 2 -->
+            <div class="col-12 col-md-2">
+                <img src="media/Unofficial_JavaScript_logo.jpg" alt="JavaScript" class="img-fluid">
+            </div>
+            <!-- Imagen 3 -->
+            <div class="col-12 col-md-2">
+                <img src="media/HTML5lw.jpg" alt="HTML5" class="img-fluid">
+            </div>
+            <!-- Imagen 4 -->
+            <div class="col-12 col-md-2">
+                <img src="media/PHP-logo.jpg" alt="PHP" class="img-fluid">
+            </div>
+            <!-- Imagen 5 -->
+            <div class="col-12 col-md-2">
+                <img src="media/sql.jpg" alt="SQL" class="img-fluid">
+            </div>
+            <!-- Imagen 6 -->
+            <div class="col-12 col-md-2">
+                <img src="media/Oracle_logo.jpg" alt="Oracle" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap local -->
+    <script src="js/main.js"></script> <!-- Bootstrap local -->
+
+  </body>
 </html>

@@ -1,0 +1,1440 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, th, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset, figure {
+    margin: 0;
+    padding: 0;
+}
+  
+img, a img {
+    border: 0;
+}
+  
+a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: #474747;
+}
+  
+ul, li{
+    list-style: none;
+}
+  
+sub {
+    line-height:0;
+    vertical-align: sub;
+    font-size:50%;
+}
+    
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html { 
+    background: url(../media/background.jfif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 16px;
+  }
+
+  .container{
+      position: relative;
+      width: 1290px;
+      height: auto;
+      margin: 0 auto;
+	  text-align: center;
+  }
+
+.hide {
+	display: none;
+}
+
+.box_answer {
+    width: 80%;
+    color: #777;
+}
+  	
+@media screen and (min-width: 0px) and (max-width: 420px) {
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+		font-size:1em;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    .brand_top{
+        width: 60%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
+		margin: 0 auto;
+	}
+
+	.title_object_container{
+		width: 90%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+		padding-left: 2.5%;
+		padding-top: 2%;
+	}
+
+    .title_object{
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+        color:#525b76;
+        line-height: 1;
+    }
+
+    .title_object span {
+        font-size: 0.7em;
+        color: #06345e;
+    }
+
+    .title_object strong {
+        font-size: 1.3em;
+        color: #06345e;
+    }
+
+    .span_title_object{
+        font-size: 0.5em !important;
+        color: #6d6d6d !important;
+    }
+
+	.speakers_or_diary{
+        width: 90%;
+        border-radius: 25px;
+        font-size: 1.2em;
+		color:#ffffff;
+		background: #06345e;
+        padding: 0.5% 0.5% 0.7% 0.5%;
+        margin-top: 1%;
+        margin: 0 auto;
+	}
+
+    .set_brands{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        margin: 0 auto;
+    }
+
+    .container_drs{
+        width: 100%;
+        height: auto;
+        position: initial;
+        margin-top: 1em;
+    }
+
+    .figure_left{
+        text-align: left;
+        width: 45%;
+		float: left;
+		margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .paragraph_dr_one{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+
+    .figure_right{
+        width: 45%;
+        float: right;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .paragraph_dr_two{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: right;
+    }
+
+    .paragraph_dr_two strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_two span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+    
+    .avatar_container{
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .avatar_medical{
+        width: 65%;
+    }
+
+    .specialty_dr{
+        color: #00508c;
+    }
+
+	.form{
+        width: 95%;
+        margin-left: 2.5%;
+        float: left;
+        margin-top: 3%;
+        border: solid 1px #272f44;
+    }
+    
+    .btn_form{
+        background: #06345e;
+        width: 48%;
+        display: inline-block;
+        font-size: 1.2em;
+        color:#ffffff;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border: 0;
+    }
+
+    .btn_form:hover{
+        background: #272f44;
+    }
+
+    .btn_form:active{
+        background: #272f44;
+    }
+
+    .title_form{
+        width: 80%;
+        color: #525b76;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0 auto;
+    }
+
+    .paragraph_form{
+        width: 80%;
+        text-align: left;
+        color: #474747;
+        font-size: 1em;
+        padding-bottom: 1.2em;
+        margin: 0 auto;
+    }
+
+    .field-wrap{
+        margin-bottom: 0.6em;
+    }
+
+    .label_form{
+        width: 80%;
+        font-size: 1em;
+        color: #06345e;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .box_receptor{
+        width: 80%;
+        height: auto;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-align: left;
+        border: solid 1px #06345e;
+        margin: 0 auto;
+    }
+
+    .button_form{
+        width: 80%;
+        color: #ffffff;
+        font-size: 1.2em;
+        background: #272f44;
+        padding: 0.4em 0em;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .paragraph{
+        font-size: 1.5em;
+        color: #0971b7;
+        padding-top: 3%;
+	}
+	
+    .countdown{
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #022e4f;
+        padding-bottom: 2%;
+    }
+
+	#opcion_login{
+		display: none;
+	}
+
+	#opcion_registro{
+		display: block;
+
+    }
+    
+    .legal_text{
+        width: 90%;
+        font-weight: 300;
+        font-size: 0.5em;
+        color: #ffffff;
+        background: #06345e;
+        text-align: justify;
+        padding: 5%;
+        margin: 0 auto;
+    }
+
+    .open_poll{
+        width: 80%;
+        border-radius: 25px;
+        background: #525b76;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1em;
+        padding: 0.5em 1em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+      } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+		font-size: 1.3em;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    .brand_top{
+        width: 60%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
+		margin: 0 auto;
+	}
+
+	.title_object_container{
+		width: 90%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+		padding-left: 2.5%;
+		padding-top: 2%;
+	}
+
+    .title_object{
+        width: 100%;
+        font-size: 1.6em;
+        text-align: center;
+        color:#525b76;
+        line-height: 1;
+    }
+
+    .title_object span {
+        font-size: 0.7em;
+        color: #06345e;
+    }
+
+    .title_object strong {
+        font-size: 1.3em;
+        color: #06345e;
+    }
+
+    .span_title_object{
+        font-size: 0.7em !important;
+        color: #6d6d6d !important;
+    }
+
+	.speakers_or_diary{
+        width: 85%;
+        border-radius: 25px;
+        font-size: 1.2em;
+		color:#ffffff;
+		background: #06345e;
+        padding: 0.5% 0.5% 0.7% 0.5%;
+        margin-top: 1%;
+        margin: 0 auto;
+	}
+
+    .set_brands{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        margin: 0 auto;
+    }
+
+    .container_drs{
+        width: 100%;
+        height: auto;
+        position: initial;
+        margin-top: 0.5em;
+    }
+
+    .figure_left{
+        text-align: left;
+        width: 45%;
+		float: left;
+		margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .paragraph_dr_one{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+
+    .figure_right{
+        width: 45%;
+        float: right;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .paragraph_dr_two{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: right;
+    }
+
+    .paragraph_dr_two strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_two span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+    
+    .avatar_container{
+        width: 85%;
+        padding-top: 0.5em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .avatar_medical{
+        width: 50%;
+    }
+
+    .specialty_dr{
+        color: #00508c;
+    }
+
+	.form{
+        width: 95%;
+        margin-left: 2.5%;
+        float: left;
+        margin-top: 3%;
+        border: solid 1px #272f44;
+    }
+    
+    .btn_form{
+        background: #06345e;
+        width: 48%;
+        display: inline-block;
+        font-size: 1.2em;
+        color:#ffffff;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border: 0;
+    }
+
+    .btn_form:hover{
+        background: #272f44;
+    }
+
+    .btn_form:active{
+        background: #272f44;
+    }
+
+    .title_form{
+        width: 80%;
+        color: #525b76;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0 auto;
+    }
+
+    .paragraph_form{
+        width: 80%;
+        text-align: left;
+        color: #474747;
+        font-size: 1em;
+        padding-bottom: 1.2em;
+        margin: 0 auto;
+    }
+
+    .field-wrap{
+        margin-bottom: 0.6em;
+    }
+
+    .label_form{
+        width: 80%;
+        font-size: 1em;
+        color: #06345e;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .box_receptor{
+        width: 80%;
+        height: auto;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-align: left;
+        border: solid 1px #06345e;
+        margin: 0 auto;
+    }
+
+    .button_form{
+        width: 80%;
+        color: #ffffff;
+        font-size: 1.2em;
+        background: #272f44;
+        padding: 0.4em 0em;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .paragraph{
+        font-size: 1.5em;
+        color: #0971b7;
+        padding-top: 3%;
+	}
+	
+    .countdown{
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #022e4f;
+        padding-bottom: 2%;
+    }
+
+	#opcion_login{
+		display: none;
+	}
+
+	#opcion_registro{
+		display: block;
+
+    }
+    
+    .legal_text{
+        width: 95%;
+        font-weight: 300;
+        font-size: 0.7em;
+        color: #ffffff;
+        background: #06345e;
+        text-align: justify;
+        padding: 2.5%;
+        margin: 0 auto;
+    }
+
+    .open_poll{
+        width: 80%;
+        border-radius: 25px;
+        background: #525b76;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1em;
+        padding: 0.5em 1em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+      } 
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+		font-size: 1.2em;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    .brand_top{
+        width: 35%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
+		margin: 0 auto;
+	}
+
+	.title_object_container{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding-left: 2.5%;
+	}
+
+    .title_object{
+        width: 100%;
+        font-size: 1.8em;
+        text-align: center;
+        color:#525b76;
+        line-height: 1;
+    }
+
+    .title_object span {
+        font-size: 0.7em;
+        color: #06345e;
+    }
+
+    .title_object strong {
+        font-size: 1.3em;
+        color: #06345e;
+    }
+
+    .span_title_object{
+        font-size: 0.7em !important;
+        color: #6d6d6d !important;
+    }
+
+	.speakers_or_diary{
+        width: 65%;
+        border-radius: 25px;
+        font-size: 1.3em;
+        text-align: left;
+		color:#ffffff;
+        background: #06345e;
+        margin-top: 1%;
+		text-align: center;
+        padding: 0.5% 0.5% 0.7% 0.5%;
+        margin: 0 auto;
+	}
+
+    .set_brands{
+        width: 75%;
+        height: auto;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        margin: 0 auto;
+    }
+
+    .container_drs{
+        width: 100%;
+        height: auto;
+        position: initial;
+        margin-top: 0.5em;
+    }
+
+    .figure_left{
+        text-align: left;
+        width: 45%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+    }
+
+    .paragraph_dr_one{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+
+    .figure_right{
+        width: 45%;
+        float: right;
+        margin-left: 2%;
+		margin-right: 2%;
+    }
+
+    .paragraph_dr_two{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: right;
+    }
+
+    .paragraph_dr_two strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_two span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+    
+    .avatar_container{
+        width: 85%;
+        padding-top: 1em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .avatar_medical{
+        width: 50%;
+    }
+
+    .specialty_dr{
+        color: #00508c;
+    }
+
+	.form{
+        width: 95%;
+        margin-left: 2.5%;
+        float: left;
+        margin-top: 3%;
+        border: solid 1px #272f44;
+    }
+    
+    .btn_form{
+        background: #06345e;
+        width: 48%;
+        display: inline-block;
+        font-size: 1.2em;
+        color:#ffffff;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border: 0;
+    }
+
+    .btn_form:hover{
+        background: #272f44;
+    }
+
+    .btn_form:active{
+        background: #272f44;
+    }
+
+    .title_form{
+        width: 80%;
+        color: #525b76;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0 auto;
+    }
+
+    .paragraph_form{
+        width: 80%;
+        text-align: left;
+        color: #474747;
+        font-size: 1em;
+        padding-bottom: 1.2em;
+        margin: 0 auto;
+    }
+
+    .field-wrap{
+        margin-bottom: 0.6em;
+    }
+
+    .label_form{
+        width: 80%;
+        font-size: 1em;
+        color: #06345e;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .box_receptor{
+        width: 80%;
+        height: auto;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-align: left;
+        border: solid 1px #06345e;
+        margin: 0 auto;
+    }
+
+    .button_form{
+        width: 80%;
+        color: #ffffff;
+        font-size: 1.2em;
+        background: #272f44;
+        padding: 0.4em 0em;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .paragraph{
+        font-size: 1.5em;
+        color: #0971b7;
+        padding-top: 3%;
+	}
+	
+    .countdown{
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #022e4f;
+        padding-bottom: 2%;
+    }
+
+	#opcion_login{
+		display: none;
+	}
+
+	#opcion_registro{
+		display: block;
+    }
+    
+    .legal_text{
+        width: 95%;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #ffffff;
+        background: #06345e;
+        text-align: justify;
+        padding: 2.5%;
+        margin: 0 auto;
+    }
+
+    .open_poll{
+        width: 80%;
+        border-radius: 25px;
+        background: #525b76;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+      } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1289px) {
+    .container{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+		font-size: 1.3em;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    .brand_top{
+        width: 15%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
+		float: left;
+	}
+
+	.title_object_container{
+		width: 75%;
+		height: auto;
+		float: left;
+		padding-left: 2.5%;
+		padding-top: 2%;
+	}
+
+    .title_object{
+        width: 100%;
+        font-size: 2em;
+        text-align: left;
+        color:#525b76;
+        line-height: 1;
+    }
+
+    .title_object span {
+        font-size: 0.7em;
+        color: #06345e;
+    }
+
+    .title_object strong {
+        font-size: 1.3em;
+        color: #06345e;
+    }
+
+    .span_title_object{
+        font-size: 0.7em !important;
+        color: #6d6d6d !important;
+    }
+
+	.speakers_or_diary{
+        width: 65%;
+        border-radius: 25px;
+        font-size: 1.4em;
+        text-align: left;
+		color:#ffffff;
+        background: #06345e;
+        margin-top: 1%;
+		text-align: center;
+        padding: 0.5% 0.5% 0.7% 0.5%;
+        float: left;
+	}
+
+    .set_brands{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        margin: 0 auto;
+    }
+
+    .container_drs{
+        width: 100%;
+        height: auto;
+        position: initial;
+        margin-top: 0.5em;
+    }
+
+    .figure_left{
+        text-align: left;
+        width: 30%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+    }
+
+    .paragraph_dr_one{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+
+    .figure_right{
+        width: 30%;
+		float: left;
+    }
+
+    .paragraph_dr_two{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: right;
+    }
+
+    .paragraph_dr_two strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_two span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+    
+    .avatar_container{
+        width: 85%;
+        padding-top: 0.5em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .avatar_medical{
+        width: 50%;
+    }
+
+    .specialty_dr{
+        color: #00508c;
+    }
+
+	.form{
+		width: 30%;
+		float: right;
+		margin-right: 2%;
+        margin-left: 2%;
+        border: solid 1px #272f44;
+    }
+    
+    .btn_form{
+        background: #06345e;
+        width: 48%;
+        display: inline-block;
+        font-size: 1em;
+        color:#ffffff;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border: 0;
+    }
+
+    .btn_form:hover{
+        background: #272f44;
+    }
+
+    .btn_form:active{
+        background: #272f44;
+    }
+
+    .title_form{
+        width: 80%;
+        color: #525b76;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0 auto;
+    }
+
+    .paragraph_form{
+        width: 80%;
+        text-align: left;
+        color: #474747;
+        font-size: 1em;
+        padding-bottom: 1.2em;
+        margin: 0 auto;
+    }
+
+    .field-wrap{
+        margin-bottom: 0.6em;
+    }
+
+    .label_form{
+        width: 80%;
+        font-size: 1em;
+        color: #06345e;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .box_receptor{
+        width: 80%;
+        height: auto;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-align: left;
+        border: solid 1px #06345e;
+        margin: 0 auto;
+    }
+
+    .button_form{
+        width: 80%;
+        color: #ffffff;
+        font-size: 1.2em;
+        background: #272f44;
+        padding: 0.4em 0em;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .paragraph{
+        font-size: 1.5em;
+        color: #0971b7;
+        padding-top: 3%;
+	}
+	
+    .countdown{
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #022e4f;
+        padding-bottom: 2%;
+    }
+
+	#opcion_login{
+		display: none;
+	}
+
+	#opcion_registro{
+		display: block;
+    }
+    
+    .legal_text{
+        width: 95%;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #ffffff;
+        background: #06345e;
+        text-align: justify;
+        padding: 2.5%;
+        margin: 0 auto;
+    }
+
+    .open_poll{
+        width: 80%;
+        border-radius: 25px;
+        background: #525b76;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+      } 
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1290px) {
+	.container{
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+		font-size: 1.3em;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    .brand_top{
+        width: 15%;
+        height: auto;
+        text-align: center;
+        padding: 2%;
+		float: left;
+	}
+
+	.title_object_container{
+		width: 75%;
+		height: auto;
+		float: left;
+		padding-left: 2.5%;
+		padding-top: 2%;
+	}
+
+    .title_object{
+        width: 100%;
+        font-size: 2em;
+        text-align: left;
+        color:#525b76;
+        line-height: 1;
+    }
+
+    .title_object span {
+        font-size: 0.7em;
+        color: #06345e;
+    }
+
+    .title_object strong {
+        font-size: 1.3em;
+        color: #06345e;
+    }
+
+    .span_title_object{
+        font-size: 0.7em !important;
+        color: #6d6d6d !important;
+    }
+
+	.speakers_or_diary{
+        width: 65%;
+        border-radius: 25px;
+        font-size: 1.5em;
+        text-align: left;
+		color:#ffffff;
+		background: #06345e;
+        text-align: center;
+        margin-top: 1%;
+        padding: 0.5% 0.5% 0.7% 0.5%;
+        float: left;
+	}
+
+    .set_brands{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        margin: 0 auto;
+    }
+
+    .container_drs{
+        width: 100%;
+        height: auto;
+        position: initial;
+        margin-top: 0.5em;
+    }
+
+    .figure_left{
+        text-align: left;
+        width: 30%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+    }
+
+    .paragraph_dr_one{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_one span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+
+    .figure_right{
+        width: 30%;
+		float: left;
+    }
+
+    .paragraph_dr_two{
+        color: #5e5e5e;
+        padding-top: 5%;
+        text-align: right;
+    }
+
+    .paragraph_dr_two strong{
+        color: #525b76;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+    .paragraph_dr_two span{
+        font-size: 0.8em;
+        color: #272f44;
+    }
+    
+    .avatar_container{
+        width: 85%;
+        padding-top: 0.5em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .avatar_medical{
+        width: 50%;
+    }
+
+    .specialty_dr{
+        color: #00508c;
+    }
+
+	.form{
+		width: 30%;
+		float: right;
+		margin-right: 2%;
+        margin-left: 2%;
+        border: solid 1px #272f44;
+    }
+    
+    .btn_form{
+        background: #06345e;
+        width: 48%;
+        display: inline-block;
+        font-size: 1em;
+        color:#ffffff;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border: 0;
+    }
+
+    .btn_form:hover{
+        background: #272f44;
+    }
+
+    .btn_form:active{
+        background: #272f44;
+    }
+
+    .title_form{
+        width: 80%;
+        color: #525b76;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0 auto;
+    }
+
+    .paragraph_form{
+        width: 80%;
+        text-align: left;
+        color: #474747;
+        font-size: 1em;
+        padding-bottom: 1.2em;
+        margin: 0 auto;
+    }
+
+    .field-wrap{
+        margin-bottom: 0.6em;
+    }
+
+    .label_form{
+        width: 80%;
+        font-size: 1em;
+        color: #06345e;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .box_receptor{
+        width: 80%;
+        height: auto;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-align: left;
+        border: solid 1px #06345e;
+        margin: 0 auto;
+    }
+
+    .button_form{
+        width: 80%;
+        color: #ffffff;
+        font-size: 1.2em;
+        background: #272f44;
+        padding: 0.4em 0em;
+        border-radius: 1.5em;
+        margin-bottom: 0.5em;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .paragraph{
+        font-size: 1.5em;
+        color: #0971b7;
+        padding-top: 3%;
+	}
+	
+    .countdown{
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #022e4f;
+        padding-bottom: 2%;
+    }
+
+	#opcion_login{
+		display: none;
+	}
+
+	#opcion_registro{
+		display: block;
+    }
+    
+    .legal_text{
+        width: 100%;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #ffffff;
+        background: #06345e;
+        text-align: justify;
+        padding: 1%;
+        margin: 0 auto;
+    }
+
+    .open_poll{
+        width: 60%;
+        border-radius: 25px;
+        background: #525b76;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin: 0 auto;
+      } 
+
+}

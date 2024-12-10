@@ -1,0 +1,94 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, th, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset, figure {
+    margin: 0;
+    padding: 0;
+}
+  
+img, a img {
+    border: 0;
+}
+  
+a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: #474747;
+}
+  
+ul, li{
+    list-style: none;
+}
+  
+sub {
+    line-height:0;
+    vertical-align: sub;
+    font-size:50%;
+}
+    
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html { 
+    background: url(../media/background.jfif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+	/*background-color: rgba(0,0,0,0);
+    
+    }@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}@media (min-width:1400px){.co
+    
+    */
+	background-color: transparent;
+}
+
+.header_container, .content_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.header_container {
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(35, 27, 160);
+}
+
+.content_container {
+    font-size: 16px;
+    color: rgb(165, 224, 248);
+    text-align: justify;
+}
+
+.images_container{
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+	background-color: transparent;
+}
+
+.hide {
+	display: none;
+}
+
+  	
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .images_container{
+        width: 30%;
+    }
+
+    .content_container {
+        font-size: 13px;
+    }
+
+}
