@@ -62,11 +62,15 @@ body {
 }
 
 .content_container {
+    margin: 0 auto;
     font-size: 16px;
     color: rgb(165, 224, 248);
     text-align: justify;
 }
 
+.my_picture {
+    margin: 0 auto;
+}
 .images_container{
     position: relative;
     width: 70%;
