@@ -1,12 +1,71 @@
+:root {
+    --color-principal: #badd1f;       /* Color principal (Dorado) */
+    --color-principal-brillante: #def97d; /* Color al hacer hover */
+    --color-texto-oscuro: #000000;
+}
+
 body {
     background: radial-gradient(circle at center, #1a1a2e 0%, #070708 100%);
     color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.glass:hover {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.2); /* Resplandor azul suave */
+    transform: translateY(-4px); /* Eleva la tarjeta suavemente */
+}
+
+.text-fecha {
+    color: var(--color-principal);
+}
+.input-mistico:focus {
+    border-bottom: 1px solid var(--color-principal);
+    box-shadow: 0 4px 12px -6px var(--color-principal); /* Un brillo sutil bajo la línea */
+    filter: brightness(1.2);
+}
+
+.btn-mystic {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05); /* Fondo sutil */
+    color: white;
+    padding: 0.75rem 0;
+    border-radius: 9999px;
+    border: 1px solid var(--color-principal);
+    transition: all 0.4s ease;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+/* El reemplazo del hover:bg-yellow-500 */
+.btn-mystic:hover {
+    background-color: var(--color-principal);
+    color: var(--color-texto-oscuro);
+    box-shadow: 0 0 20px rgba(201, 212, 55, 0.6);
+    transform: translateY(-2px); /* Un pequeño salto visual */
+}
+
+.btn-mystic:active {
+    transform: translateY(0);
+}
+
+.titulo-mistico {
+    color: var(--color-principal);
+}
+
+/* Efecto extra: sutil pulsación al pasar el mouse */
+.titulo-mistico:hover {
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 20px var(--color-principal);
+    filter: brightness(1.2);
+}
+
 .glass {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(200, 215, 0, 0.1);
+    border: 2px solid rgba(147, 207, 7, 0.1);
     border-radius: 20px;
 }
 .glow-text {
